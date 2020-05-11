@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/5a1ee8f446.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <a id="options" href="options2.html"><i class="fas fa-cog fa-lg"></i></a>
+    <p id="appname">wiito</p>
+    <p id="notfound"></p>
+    <div class="input">
+        <input type="text" id="movietitle" name="movietitle" placeholder=" search a movie/show" value=""><br>
+    </div>
+    <div id="movieinfo">
+        <div id="postercont">
+            <img src="" alt="" id="poster">
+        </div>
+        <div id="all">
+            <p id="title" class="a"> </p>
+            <div id="yrr">
+                <p id="year" class="a"> </p>
+                <p id="runtime" class="a"> </p>
+                <p id="rating" class="a"> </p>
+            </div>
+            <p id="plot" class="a"></p>
+            <button id="next" style="border: none; background-color: linear-gradient(#f2f2f2, #dddddd); display: none;">
+                next <i class="fas fa-angle-right"></i>
+            </button>
+            <button id="previous"
+                style="border: none; background-color: linear-gradient(#f2f2f2, #dddddd); display: none;">
+                <i class="fas fa-angle-left">
+
+                </i></button>
+        </div>
+    </div>
+    <div id="scores">
+
+        <p id="imdbscore">8.9/10 </p>
+        <img src="images/imdb.png" id="imdbicon" alt="">
+        <p id="seperator1">|</p>
+        <p id="rottenscore">91% </p>
+        <img src="images/rotten.png" id="rottenicon" alt="">
+        <p id="seperator2">|</p>
+        <p id="metascore">90 </p>
+        <img src="images/metacritic.png" id="metaicon" alt="">
+
+    </div>
+    <div id="availability">
+        <p id="availableon"></p>
+        <div id="links">
+            <a id="netflix" href="" target="_blank"><img id="link" src="images/netflix.png" alt=""></a>
+            <a id="amazon" href="" target="_blank"><img id="link" src="images/amazon.png" alt=""></a>
+            <a id="hulu" href="" target="_blank"><img id="link" src="images/hulu.png" alt=""></a>
+
+        </div>
+    </div>
+    <script defer src="popup.js"></script>
+</body>
+
+</html>
