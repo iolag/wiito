@@ -221,7 +221,7 @@ function availability() {
                 return response.json()
             })
             .then(data => {
-                if (data.results.length === 0) {
+                if (data.results.length === undefined) {
                     document.getElementById("notfound").innerHTML = "Movie not found.";
                     document.getElementById("scores").style.display = "none";
                     document.getElementById("availability").style.display = "none";
@@ -250,7 +250,7 @@ function availability() {
                 console.log(data);
 
                 utellydata = data.results
-
+                if (data.results.length > 1){
                 document.getElementById("movietitle").style.width = "94vw";
                 document.getElementById("availability").style.display = "block";
                 document.getElementById("netflix").style.display = "none";
@@ -258,7 +258,7 @@ function availability() {
                 document.getElementById("hulu").style.display = "none";
 
                 let x = 0;
-
+                
                 for (let i = 0; i < data.results[0].locations.length; i++) {
                     if (data.results[0].locations[i].display_name === "Amazon Prime Video") {
                         var am = document.getElementById("amazon")
@@ -289,7 +289,7 @@ function availability() {
 
                 }
                 let resultcount = 0;
-                return search(resultcount);
+                return search(resultcount);}
             })
     });
 };

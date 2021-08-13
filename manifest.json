@@ -1,6 +1,6 @@
 {
     "name": "wiito",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Where is it on? Find out if a movie or tv show is on Netflix, Amazon Prime or Hulu!",
     "manifest_version": 2,
     "permissions": [
