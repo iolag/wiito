@@ -7,4 +7,5 @@ the search bar and press enter or highlight some text in your browser and press 
 Shuffle through the results to find the movie you want and if it's available for streaming, the corresponding icons will appear. 
 Press them to open the movie/tv show in a new tab and start watching!
 
+
 https://chrome.google.com/webstore/detail/wiito/igknbcnjibkfeikfmfnecikgpnfjinph
